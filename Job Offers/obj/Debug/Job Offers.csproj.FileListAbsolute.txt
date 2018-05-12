@@ -1,0 +1,56 @@
+C:\Users\Salah\source\repos\Job Offers\Job Offers\bin\Job Offers.dll.config
+C:\Users\Salah\source\repos\Job Offers\Job Offers\bin\Job Offers.dll
+C:\Users\Salah\source\repos\Job Offers\Job Offers\bin\Job Offers.pdb
+C:\Users\Salah\source\repos\Job Offers\Job Offers\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+C:\Users\Salah\source\repos\Job Offers\Job Offers\bin\Microsoft.Web.Infrastructure.dll
+C:\Users\Salah\source\repos\Job Offers\Job Offers\bin\System.Web.Helpers.dll
+C:\Users\Salah\source\repos\Job Offers\Job Offers\bin\System.Web.Mvc.dll
+C:\Users\Salah\source\repos\Job Offers\Job Offers\bin\System.Web.Razor.dll
+C:\Users\Salah\source\repos\Job Offers\Job Offers\bin\System.Web.Webpages.Deployment.dll
+C:\Users\Salah\source\repos\Job Offers\Job Offers\bin\System.Web.Webpages.dll
+C:\Users\Salah\source\repos\Job Offers\Job Offers\bin\System.Web.Webpages.Razor.dll
+C:\Users\Salah\source\repos\Job Offers\Job Offers\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+C:\Users\Salah\source\repos\Job Offers\Job Offers\bin\System.Web.Razor.xml
+C:\Users\Salah\source\repos\Job Offers\Job Offers\bin\System.Web.Webpages.xml
+C:\Users\Salah\source\repos\Job Offers\Job Offers\bin\System.Web.Webpages.Deployment.xml
+C:\Users\Salah\source\repos\Job Offers\Job Offers\bin\System.Web.Webpages.Razor.xml
+C:\Users\Salah\source\repos\Job Offers\Job Offers\bin\System.Web.Helpers.xml
+C:\Users\Salah\source\repos\Job Offers\Job Offers\bin\System.Web.Mvc.xml
+C:\Users\Salah\source\repos\Job Offers\Job Offers\obj\Debug\Job Offers.csprojResolveAssemblyReference.cache
+C:\Users\Salah\source\repos\Job Offers\Job Offers\obj\Debug\Job Offers.csproj.CoreCompileInputs.cache
+C:\Users\Salah\source\repos\Job Offers\Job Offers\obj\Debug\Job Offers.dll
+C:\Users\Salah\source\repos\Job Offers\Job Offers\obj\Debug\Job Offers.pdb
+C:\Users\Salah\source\repos\Job Offers\Job Offers\bin\EntityFramework.dll
+C:\Users\Salah\source\repos\Job Offers\Job Offers\bin\EntityFramework.SqlServer.dll
+C:\Users\Salah\source\repos\Job Offers\Job Offers\bin\EntityFramework.xml
+C:\Users\Salah\source\repos\Job Offers\Job Offers\bin\EntityFramework.SqlServer.xml
+C:\Users\Salah\source\repos\Job Offers\Job Offers\bin\Antlr3.Runtime.dll
+C:\Users\Salah\source\repos\Job Offers\Job Offers\bin\Microsoft.AspNet.Identity.Core.dll
+C:\Users\Salah\source\repos\Job Offers\Job Offers\bin\Microsoft.AspNet.Identity.EntityFramework.dll
+C:\Users\Salah\source\repos\Job Offers\Job Offers\bin\Microsoft.AspNet.Identity.Owin.dll
+C:\Users\Salah\source\repos\Job Offers\Job Offers\bin\Microsoft.Owin.dll
+C:\Users\Salah\source\repos\Job Offers\Job Offers\bin\Microsoft.Owin.Host.SystemWeb.dll
+C:\Users\Salah\source\repos\Job Offers\Job Offers\bin\Microsoft.Owin.Security.Cookies.dll
+C:\Users\Salah\source\repos\Job Offers\Job Offers\bin\Microsoft.Owin.Security.dll
+C:\Users\Salah\source\repos\Job Offers\Job Offers\bin\Microsoft.Owin.Security.OAuth.dll
+C:\Users\Salah\source\repos\Job Offers\Job Offers\bin\Newtonsoft.Json.dll
+C:\Users\Salah\source\repos\Job Offers\Job Offers\bin\Owin.dll
+C:\Users\Salah\source\repos\Job Offers\Job Offers\bin\System.Web.Optimization.dll
+C:\Users\Salah\source\repos\Job Offers\Job Offers\bin\WebGrease.dll
+C:\Users\Salah\source\repos\Job Offers\Job Offers\bin\Antlr3.Runtime.pdb
+C:\Users\Salah\source\repos\Job Offers\Job Offers\bin\Microsoft.AspNet.Identity.Core.xml
+C:\Users\Salah\source\repos\Job Offers\Job Offers\bin\Microsoft.AspNet.Identity.EntityFramework.xml
+C:\Users\Salah\source\repos\Job Offers\Job Offers\bin\Microsoft.AspNet.Identity.Owin.xml
+C:\Users\Salah\source\repos\Job Offers\Job Offers\bin\Microsoft.Owin.xml
+C:\Users\Salah\source\repos\Job Offers\Job Offers\bin\Microsoft.Owin.Host.SystemWeb.xml
+C:\Users\Salah\source\repos\Job Offers\Job Offers\bin\Microsoft.Owin.Security.xml
+C:\Users\Salah\source\repos\Job Offers\Job Offers\bin\Microsoft.Owin.Security.Cookies.xml
+C:\Users\Salah\source\repos\Job Offers\Job Offers\bin\Microsoft.Owin.Security.OAuth.xml
+C:\Users\Salah\source\repos\Job Offers\Job Offers\bin\Newtonsoft.Json.xml
+C:\Users\Salah\source\repos\Job Offers\Job Offers\bin\System.Web.Optimization.xml
+C:\Users\Salah\source\repos\Job Offers\Job Offers\bin\Microsoft.Owin.Security.Google.dll
+C:\Users\Salah\source\repos\Job Offers\Job Offers\bin\Microsoft.Owin.Security.Google.xml
+C:\Users\Salah\source\repos\Job Offers\Job Offers\obj\Debug\Job_Offers.Migrations.InitialCreate.resources
+C:\Users\Salah\source\repos\Job Offers\Job Offers\obj\Debug\Job Offers.csproj.GenerateResource.Cache
+C:\Users\Salah\source\repos\Job Offers\Job Offers\obj\Debug\Job_Offers.Migrations.addcolumntousers.resources
+C:\Users\Salah\source\repos\Job Offers\Job Offers\obj\Debug\Job_Offers.Migrations.addcategory.resources
