@@ -32,5 +32,7 @@ namespace WebApplication5.Models
         }
 
         public System.Data.Entity.DbSet<Job_Offers.Models.Category> Categories { get; set; }
+
+        public System.Data.Entity.DbSet<Job_Offers.Models.Jobss> Jobsses { get; set; }
     }
 }

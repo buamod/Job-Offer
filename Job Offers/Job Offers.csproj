@@ -160,6 +160,7 @@
     <Compile Include="Controllers\AccountController.cs" />
     <Compile Include="Controllers\CategoriesController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
+    <Compile Include="Controllers\JobssesController.cs" />
     <Compile Include="Controllers\ManageController.cs" />
     <Compile Include="Controllers\TestController.cs" />
     <Compile Include="Global.asax.cs">
@@ -177,10 +178,23 @@
     <Compile Include="Migrations\201805051952230_addcategory.Designer.cs">
       <DependentUpon>201805051952230_addcategory.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\201805171804325_no.cs" />
+    <Compile Include="Migrations\201805171804325_no.Designer.cs">
+      <DependentUpon>201805171804325_no.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201805171813381_addjobss.cs" />
+    <Compile Include="Migrations\201805171813381_addjobss.Designer.cs">
+      <DependentUpon>201805171813381_addjobss.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201805171827546_addjobss1.cs" />
+    <Compile Include="Migrations\201805171827546_addjobss1.Designer.cs">
+      <DependentUpon>201805171827546_addjobss1.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\AccountViewModels.cs" />
     <Compile Include="Models\Category.cs" />
     <Compile Include="Models\IdentityModels.cs" />
+    <Compile Include="Models\Jobss.cs" />
     <Compile Include="Models\ManageViewModels.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Startup.cs" />
@@ -250,6 +264,11 @@
     <Content Include="Views\Categories\Details.cshtml" />
     <Content Include="Views\Categories\Edit.cshtml" />
     <Content Include="Views\Categories\Index.cshtml" />
+    <Content Include="Views\Jobsses\Create.cshtml" />
+    <Content Include="Views\Jobsses\Delete.cshtml" />
+    <Content Include="Views\Jobsses\Details.cshtml" />
+    <Content Include="Views\Jobsses\Edit.cshtml" />
+    <Content Include="Views\Jobsses\Index.cshtml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
@@ -269,6 +288,15 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\201805051952230_addcategory.resx">
       <DependentUpon>201805051952230_addcategory.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201805171804325_no.resx">
+      <DependentUpon>201805171804325_no.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201805171813381_addjobss.resx">
+      <DependentUpon>201805171813381_addjobss.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201805171827546_addjobss1.resx">
+      <DependentUpon>201805171827546_addjobss1.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>
