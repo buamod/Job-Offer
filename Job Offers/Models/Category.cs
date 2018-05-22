@@ -16,6 +16,6 @@ namespace Job_Offers.Models
         [Display(Name ="وصف النوع")]
         public string CategoryDescription { get; set; }
 
-        public ICollection<Jobss> Jobss { get; set; }
+        public virtual ICollection<Jobss> Jobss { get; set; }
     }
 }

@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.ComponentModel;
+using System.ComponentModel.DataAnnotations;
 using System.Linq;
 using System.Web;
 
@@ -14,6 +15,7 @@ namespace Job_Offers.Models
         public string JobTitle { get; set; }
 
         [DisplayName("وصف الوظيفة")]
+        [DataType(DataType.MultilineText)]
         public string JibContent { get; set; }
 
         [DisplayName("صورة الوظيفة")]
@@ -22,7 +24,7 @@ namespace Job_Offers.Models
         [DisplayName("نوع الوظيفة")]
         public int CategoryID { get; set; }
 
-        public Category Category { get; set; }
+        public virtual Category Category { get; set; }
 
     }
 }

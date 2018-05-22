@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Data;
 using System.Data.Entity;
+using System.IO;
 using System.Linq;
 using System.Net;
 using System.Web;
@@ -49,10 +50,13 @@ namespace Job_Offers.Controllers
         // more details see https://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public ActionResult Create([Bind(Include = "Id,JobTitle,JibContent,JobImage,CategoryID")] Jobss jobss)
+        public ActionResult Create(Jobss jobss, HttpPostedFileBase upload)
         {
             if (ModelState.IsValid)
             {
+                string path = Path.Combine(Server.MapPath("~/Uploads"), upload.FileName);
+                upload.SaveAs(path);
+                jobss.JobImage = upload.FileName;
                 db.Jobsses.Add(jobss);
                 db.SaveChanges();
                 return RedirectToAction("Index");
@@ -83,10 +87,13 @@ namespace Job_Offers.Controllers
         // more details see https://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public ActionResult Edit([Bind(Include = "Id,JobTitle,JibContent,JobImage,CategoryID")] Jobss jobss)
+        public ActionResult Edit(Jobss jobss, HttpPostedFileBase upload)
         {
             if (ModelState.IsValid)
             {
+                string path = Path.Combine(Server.MapPath("~/Uploads"), upload.FileName);
+                upload.SaveAs(path);
+                jobss.JobImage = upload.FileName;
                 db.Entry(jobss).State = EntityState.Modified;
                 db.SaveChanges();
                 return RedirectToAction("Index");

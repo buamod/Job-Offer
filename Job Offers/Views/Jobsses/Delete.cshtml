@@ -41,7 +41,9 @@
         </dt>
 
         <dd>
-            @Html.DisplayFor(model => model.JobImage)
+            <img src="~/uploads/@Html.DisplayFor(model=>model.JobImage)"
+                 class="thumbnail"
+                 style="width: 100px; height:100px; margin-top:10px" />
         </dd>
 
     </dl>
