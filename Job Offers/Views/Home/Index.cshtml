@@ -19,7 +19,7 @@
             @foreach (var subitem in item.Jobss)
             {
 
-                <div class="col-md-3 thumbnail" style="margin-left:20px; margin-bottom:30px; height:auto;">
+                <div class="col-md-3 thumbnail" style="margin-left:20px; margin-bottom:30px; height:400px;">
                     <img src="~/Uploads/@subitem.JobImage" style="height:230px" />
                     <h3>@Html.DisplayFor(modelItem => subitem.JobTitle)</h3>
                     <h5>@Html.DisplayFor(modelItem => subitem.JibContent)</h5>

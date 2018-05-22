@@ -52,9 +52,21 @@ namespace Job_Offers.Controllers
         [ValidateAntiForgeryToken]
         public ActionResult Create(Jobss jobss, HttpPostedFileBase upload)
         {
-            if (ModelState.IsValid)
+            string path;
+            if (ModelState.IsValid && upload == null)
             {
-                string path = Path.Combine(Server.MapPath("~/Uploads"), upload.FileName);
+                
+                path = "No_Image_Available.jpg";
+
+                
+                jobss.JobImage = path;
+                db.Jobsses.Add(jobss);
+                db.SaveChanges();
+                return RedirectToAction("Index");
+            }
+            if (ModelState.IsValid && upload != null)
+            {
+                path = Path.Combine(Server.MapPath("~/Uploads"), upload.FileName);
                 upload.SaveAs(path);
                 jobss.JobImage = upload.FileName;
                 db.Jobsses.Add(jobss);
@@ -89,9 +101,21 @@ namespace Job_Offers.Controllers
         [ValidateAntiForgeryToken]
         public ActionResult Edit(Jobss jobss, HttpPostedFileBase upload)
         {
-            if (ModelState.IsValid)
+            string path;
+            if (ModelState.IsValid && upload == null)
             {
-                string path = Path.Combine(Server.MapPath("~/Uploads"), upload.FileName);
+
+                path = "No_Image_Available.jpg";
+
+
+                jobss.JobImage = path;
+                db.Entry(jobss).State = EntityState.Modified;
+                db.SaveChanges();
+                return RedirectToAction("Index");
+            }
+            if (ModelState.IsValid && upload != null)
+            {
+                path = Path.Combine(Server.MapPath("~/Uploads"), upload.FileName);
                 upload.SaveAs(path);
                 jobss.JobImage = upload.FileName;
                 db.Entry(jobss).State = EntityState.Modified;
@@ -100,6 +124,7 @@ namespace Job_Offers.Controllers
             }
             ViewBag.CategoryID = new SelectList(db.Categories, "ID", "CategoryName", jobss.CategoryID);
             return View(jobss);
+            
         }
 
         // GET: Jobsses/Delete/5
