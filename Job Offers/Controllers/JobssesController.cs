@@ -7,6 +7,7 @@ using System.Linq;
 using System.Net;
 using System.Web;
 using System.Web.Mvc;
+using System.Web.UI;
 using Job_Offers.Models;
 using WebApplication5.Models;
 
@@ -101,26 +102,19 @@ namespace Job_Offers.Controllers
         [ValidateAntiForgeryToken]
         public ActionResult Edit(Jobss jobss, HttpPostedFileBase upload)
         {
-            string path;
-            string oldpath = jobss.JobImage;
-            if (ModelState.IsValid && upload == null)
+            
+            if (ModelState.IsValid)
             {
+                string oldPath = Path.Combine(Server.MapPath("~/Uploads"),jobss.JobImage);
 
-                path = "No_Image_Available.jpg";
-
-
-                jobss.JobImage = path;
-                db.Entry(jobss).State = EntityState.Modified;
-                db.SaveChanges();
-                return RedirectToAction("Index");
-            }
-            if (ModelState.IsValid && upload != null)
-            {
+                if (upload != null)
+                {
+                    System.IO.File.Delete(oldPath);
+                    string path = Path.Combine(Server.MapPath("~/Uploads"), upload.FileName);
+                    upload.SaveAs(path);
+                    jobss.JobImage = upload.FileName;
+                }                                
                 
-                //System.IO.File.Delete(oldpath);
-                path = Path.Combine(Server.MapPath("~/Uploads"), upload.FileName);
-                upload.SaveAs(path);
-                jobss.JobImage = upload.FileName;
                 db.Entry(jobss).State = EntityState.Modified;
                 db.SaveChanges();
                 return RedirectToAction("Index");
