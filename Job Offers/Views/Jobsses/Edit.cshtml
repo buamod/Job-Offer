@@ -11,11 +11,18 @@
 {
                 @Html.AntiForgeryToken()
 
-                <div class="form-horizontal">
+    <div class="alert alert-danger" id="error-div" style="display:none">
+        <span id="view-err">
+
+        </span>
+    </div>
+
+    <div class="form-horizontal">
         <h4>الوظائف</h4>
         <hr />
         @Html.ValidationSummary(true, "", new { @class = "text-danger" })
         @Html.HiddenFor(model => model.Id)
+        @Html.HiddenFor(model => model.JobImage)
 
         <div class="form-group">
             @Html.LabelFor(model => model.JobTitle, htmlAttributes: new { @class = "control-label col-md-2" })
@@ -36,7 +43,7 @@
         <div class="form-group">
             @Html.LabelFor(model => model.JobImage, htmlAttributes: new { @class = "control-label col-md-2" })
             <div class="col-md-10">
-                <input type="file" name="upload" id="JobImage"/>
+                <input type="file" name="upload" id="myimage" />
                 @Html.ValidationMessageFor(model => model.JobImage, "", new { @class = "text-danger" })
             </div>
         </div>
@@ -61,13 +68,27 @@
     @Html.ActionLink("الرجوع للقائمة السابقة", "Index")
 </div>
 
-
+<script src="~/Scripts/jquery.js"></script>
 <script>
     $(function () {
         $("#save").click(function () {
-            if ($("#JobImage").val() == "") {
-
+            if ($("#myimage").val() != "") {
+            var filename = document.getElementById("myimage").value;
+            var exImage = filename.substr(filename.lastIndexOf(".") + 1);
+            var validex = ['jpg', 'png', 'gif', 'bmp'];
+            if ($.inArray(exImage, validex) == -1) {
+                $("#error-div").fadeIn();
+                $("#view-err").append("الرجاء اختيار صورة بامتداد معروف");
+                return false;
             }
+            var filesize = document.getElementById("myimage").files[0].size / 1024 / 1024;
+            if (filesize > 2) {
+                $("#error-div").fadeIn();
+                $("#view-err").append("الرجاء اختيار صورة حجمها اقل من 2 ميجابايت");
+                return false;
+            }
+         }
+        
         });
     });
 </script>

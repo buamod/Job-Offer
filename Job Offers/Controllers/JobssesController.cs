@@ -102,6 +102,7 @@ namespace Job_Offers.Controllers
         public ActionResult Edit(Jobss jobss, HttpPostedFileBase upload)
         {
             string path;
+            string oldpath = jobss.JobImage;
             if (ModelState.IsValid && upload == null)
             {
 
@@ -115,6 +116,8 @@ namespace Job_Offers.Controllers
             }
             if (ModelState.IsValid && upload != null)
             {
+                
+                //System.IO.File.Delete(oldpath);
                 path = Path.Combine(Server.MapPath("~/Uploads"), upload.FileName);
                 upload.SaveAs(path);
                 jobss.JobImage = upload.FileName;
